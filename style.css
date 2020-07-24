@@ -1,0 +1,81 @@
+
+body{
+    font-family:'open sans','monospace';
+    background: linear-gradient(to right, #00AAFF, cyan );}
+#container{
+  height:520px;
+  width:320px;
+  margin:20px auto;
+  background-color:lightslategrey;
+  top:20 px;
+  position: relative;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20 px 0 rgba(0,0,0,0.19);
+  
+}
+#result{
+    height:120px;
+    background-color:black;
+    
+   
+}
+#history{
+ text-align:right;
+ height:20px;
+ margin: 0 20px;
+ margin-top:20px;
+ font-size:18px;
+ color:lightgrey;
+ 
+}
+#output{
+text-align:right;
+height: 60px;
+margin: 10px 20px;
+font-size: 25px;
+color: white;
+
+}
+#keyboard{
+    height:400px;
+}
+.operator,.number,.empty{
+    width:50px;
+    height: 50px;
+    margin:15px ;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 14px;
+    outline:0;
+}
+.number,.empty{
+    background-color:whitesmoke;
+}
+.number,.operator{
+    cursor:pointer;
+}
+button:nth-child(4){
+ font-size:15px;
+ background-color: cornflowerblue;
+}
+button:nth-child(8){
+    font-size:15px;
+ background-color:lightsalmon;
+}
+button:nth-child(12){
+    font-size:15px;
+ background-color:lightskyblue;
+}
+button:nth-child(16){
+    font-size:15px;
+    background-color:lightpink;
+    
+}
+button:nth-child(20){
+    font-size:15px;
+    background-color:lightseagreen
+}
+button:hover{
+    background-color:lightgray;
+}
