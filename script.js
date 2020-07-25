@@ -44,19 +44,20 @@ class Calculator {
         if(this.currentOperand!='' &&this.previousOperand!=''){
         switch(this.operation){
             case '%':
-                result=prev % current;
+                result=mod(prev,current);;
                 break
             case '÷':
-                result=prev / current;
+                result=divison(prev,current);
                 break
             case 'x':
-                result=prev * current;
+                result=add(prev,current);
                 break
             case '+':
-                result=prev + current;
+                result=add(prev,current);
                 break
              case '-':
-                result=prev - current;
+                result=subtract(prev,current);
+                break;
             default:
             return
 
@@ -151,6 +152,21 @@ deleteButton.addEventListener('click', () => {
 })
 
 
+function add(a,b){
+    return a+b;
+}
 
+function subtract(a,b){
+    return a-b;
+}
+function divison(a,b){
+    return a/b;
+}
 
+function multiply(a,b){
+    return a*b;
+}
+function mod(a,b){
+    return a%b;
+}
 
